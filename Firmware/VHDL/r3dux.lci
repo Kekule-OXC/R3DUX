@@ -1,0 +1,205 @@
+
+[Device]
+Family = lc4k;
+PartNumber = LC4256V-75T100C;
+Package = 100TQFP;
+PartType = LC4256V;
+Speed = -7.5;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = yes;
+EN_PinMacrocell = yes;
+
+[Revision]
+Parent = lc4k256v.lci;
+DATE = 01/20/2021;
+TIME = 16:50:29;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+Logic_optimization_effort = 1;
+Clock_enable_optimization = Auto;
+
+[Location Assignments]
+layer = OFF;
+FLASH_ADDRESS_20_ = Pin, 84, -, P, 12;
+FLASH_ADDRESS_19_ = Pin, 85, -, P, 10;
+FLASH_ADDRESS_18_ = Pin, 86, -, P, 6;
+FLASH_ADDRESS_17_ = Pin, 87, -, P, 2;
+FLASH_ADDRESS_15_ = Pin, 92, -, A, 6;
+FLASH_ADDRESS_14_ = Pin, 93, -, A, 10;
+FLASH_ADDRESS_13_ = Pin, 94, -, A, 12;
+FLASH_ADDRESS_11_ = Pin, 98, -, B, 6;
+FLASH_ADDRESS_9_ = Pin, 100, -, B, 12;
+FLASH_ADDRESS_10_ = Pin, 99, -, B, 10;
+FLASH_ADDRESS_12_ = Pin, 97, -, B, 2;
+FLASH_ADDRESS_0_ = Pin, 14, -, E, 4;
+FLASH_ADDRESS_1_ = Pin, 11, -, D, 4;
+FLASH_ADDRESS_2_ = Pin, 10, -, D, 6;
+FLASH_ADDRESS_3_ = Pin, 9, -, D, 10;
+FLASH_ADDRESS_4_ = Pin, 8, -, D, 12;
+FLASH_ADDRESS_5_ = Pin, 6, -, C, 2;
+FLASH_ADDRESS_6_ = Pin, 5, -, C, 6;
+FLASH_ADDRESS_7_ = Pin, 4, -, C, 10;
+FLASH_ADDRESS_8_ = Pin, 3, -, C, 12;
+FLASH_ADDRESS_16_ = Pin, 91, -, A, 2;
+FLASH_DQ_0_ = Pin, 78, -, O, 12;
+FLASH_DQ_1_ = Pin, 72, -, N, 12;
+FLASH_DQ_2_ = Pin, 71, -, N, 10;
+FLASH_DQ_3_ = Pin, 61, -, L, 4;
+FLASH_DQ_4_ = Pin, 60, -, L, 6;
+FLASH_DQ_5_ = Pin, 59, -, L, 10;
+FLASH_DQ_6_ = Pin, 50, -, J, 12;
+FLASH_DQ_7_ = Pin, 49, -, J, 10;
+FLASH_CE_BACKUP = Pin, 19, -, F, 2;
+FLASH_CE_MAIN = Pin, 17, -, E, 12;
+FLASH_OE = Pin, 15, -, E, 6;
+FLASH_WE = Pin, 16, -, E, 10;
+LED_BLUE = Pin, 30, -, G, 6;
+LED_RED = Pin, 31, -, G, 2;
+LPC_LAD_0_ = Pin, 34, -, H, 12;
+LPC_LAD_2_ = Pin, 36, -, H, 6;
+LPC_LAD_1_ = Pin, 35, -, H, 10;
+LPC_LAD_3_ = Pin, 37, -, H, 2;
+LPC_CLK = Pin, 38, -, -, -;
+CONTROL_D0 = Pin, 22, -, F, 12;
+CONTROL_K = Pin, 20, -, F, 6;
+PROTECT_SWITCH = Pin, 12, 0, -, -;
+LCD_OUT_DATA_0_ = Pin, 53, -, K, 12;
+LCD_OUT_DATA_1_ = Pin, 58, -, L, 12;
+LCD_OUT_DATA_2_ = Pin, 66, -, M, 10;
+LCD_OUT_DATA_3_ = Pin, 67, -, M, 12;
+LCD_OUT_DATA_4_ = Pin, 69, -, N, 2;
+LCD_OUT_DATA_5_ = Pin, 70, -, N, 6;
+LCD_OUT_DATA_7_ = Pin, 65, -, M, 6;
+LCD_OUT_DATA_6_ = Pin, 64, -, M, 4;
+LCD_E = Pin, 48, -, J, 6;
+LCD_RW = Pin, 47, -, J, 2;
+LCD_RS = Pin, 44, -, I, 12;
+EJECT_BTN = Pin, 39, -, -, -;
+PWR_BTN = Pin, 41, -, I, 2;
+SWITCH_BANK_3_ = Pin, 29, -, G, 10;
+SWITCH_BANK_2_ = Pin, 28, -, G, 12;
+SWITCH_BANK_1_ = Pin, 27, 2, -, -;
+SWITCH_BANK_0_ = Pin, 23, 1, -, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+layer = OFF;
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]
+NONE = FLASH_ADDRESS_20_, FLASH_ADDRESS_19_, FLASH_ADDRESS_18_, CONTROL_D0, LCD_OUT_DATA_0_, 
+	LCD_OUT_DATA_5_, FLASH_ADDRESS_17_, FLASH_ADDRESS_15_, FLASH_ADDRESS_14_, 
+	FLASH_ADDRESS_13_, FLASH_ADDRESS_11_, FLASH_ADDRESS_9_, FLASH_ADDRESS_10_, 
+	FLASH_ADDRESS_12_, FLASH_ADDRESS_0_, FLASH_ADDRESS_1_, FLASH_ADDRESS_2_, 
+	FLASH_ADDRESS_3_, FLASH_ADDRESS_4_, FLASH_ADDRESS_5_, FLASH_ADDRESS_6_, 
+	FLASH_ADDRESS_7_, FLASH_ADDRESS_8_, FLASH_ADDRESS_16_, FLASH_DQ_0_, FLASH_DQ_1_, 
+	FLASH_DQ_2_, FLASH_DQ_3_, FLASH_DQ_4_, FLASH_DQ_5_, FLASH_DQ_6_, FLASH_DQ_7_, 
+	FLASH_CE_BACKUP, FLASH_CE_MAIN, FLASH_OE, FLASH_WE, LED_BLUE, LED_RED, 
+	LPC_LAD_0_, LPC_LAD_2_, LPC_LAD_1_, LPC_LAD_3_, LCD_E, CONTROL_K;
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;
+
+[OSCTIMER Assignments]
+layer = OFF;

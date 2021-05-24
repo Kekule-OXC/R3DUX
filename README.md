@@ -7,7 +7,7 @@ This is an open source recreation of one of the most well known Original Xbox LP
 
 The VHDL is 100% compatible with All the original TX software including Flashbios and LiveConfig. This allows loading user BIOS binaries and some basic Xbox tools (EEPROM Backup/modification, Hard drive Rebuilding, Locking, Unlocking, FTP access, as well as customizing the colors of the boot animation).  
   
-The VHDL written by Team Xecuter was never released and the CPLD is read protected so it is not trivial to extract the bitstream.
+The VHDL written by Team Xecuter was never released and the CPLD is read protected so it is not trivial to extract the bitstream (and they mislabelled the CPLD to make it even more difficult)
 
 While the VHDL is most likely quite different that what was written originally for the X3 my VHDL implementation is fully compatible with all the features of the original chip.
 ## Background

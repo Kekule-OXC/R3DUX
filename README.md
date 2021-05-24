@@ -3,7 +3,7 @@
 
 
 ## About this Repository
-This is an open source recreation of one of the most popular Original Xbox LPC memory/IO device created by Team Xecuter, the X3.
+This is an open source recreation of one of the most well known Original Xbox LPC memory/IO device created by Team Xecuter, the X3/X3-CE.
 
 The VHDL is 100% compatible with All the original TX software including Flashbios and LiveConfig. This allows loading user BIOS binaries and some basic Xbox tools (EEPROM Backup/modification, Hard drive Rebuilding, Locking, Unlocking, FTP access, as well as customizing the colors of the boot animation).  
   

@@ -2,6 +2,7 @@
 ![R3DUX](https://github.com/Kekule-OXC/R3DUX/blob/main/images/redux.JPG?raw=true)
 
 ![R3DUX board](https://github.com/Kekule-OXC/R3DUX/blob/main/Hardware/R3DUX%20bottom.JPG?raw=true)
+![R3DUX board](https://github.com/Kekule-OXC/R3DUX/blob/main/Hardware/R3DUX%20top.JPG?raw=true)
 
 ## About this Repository
 This is an open source recreation of one of the most well known Original Xbox LPC memory/IO device created by Team Xecuter, the X3/X3-CE.

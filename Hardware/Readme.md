@@ -17,7 +17,7 @@
 | 1   | AM29F016D-70EF          | FLASH            | SOP50P2000X120-48N         | U2             | NOR Flash 5V 16Mbit         | -----                |
 | 1   | 10k                     | POT              | TRIM_F09                   | R11            | Thumbwheel Pot 10mm         | -----                |
 | 1   | LC4256V-75TN100C        | LC4256V-75TN100C | TQFP100                    | U1             | Lattice MACH4000 CPLD 256MC | 220-1706-ND          |
-| 1   | PCM12SMTR               | PCM12SMTR        | SW_PCM12SMTR               | S1             | SPDT Side                   | -----                |
+| 1   | PCM12SMTR               | PCM12SMTR        | SW_PCM12SMTR               | S1             | SPDT Side                   | 401-2016-1-ND        |
 | 4   | SI1967DH-T1-GE3         | PNP-Transistor   | TRANS_UM6J1-L              | R1, R2, R3, R4 |                             | SI1967DH-T1-GE3CT-ND |
 | 1   | SM12B-SRSS-TB(LF)(SN)   | 12P JST          | CONN_SM12B-SRSS-TB(LF)(SN) | J2             |                             | 455-1812-1-ND        |
 | 1   | SM20B-SRDS-G-TF(LF)(SN) | 20P JST          | SM20BSRDSGTFLFSN           | J1             | JST SHD, 1mm Pitch          | 455-1866-1-ND        |

@@ -53,6 +53,7 @@ LCD-Specific Features:
 A mix of features from the purple and CE editions
 * XLCD connector is a right angle instead of straight
 * Single Pinheader for 5v connection on a v1.6 xbox
+* Porgramming pins rerouted to the 4 unused pins on the LCD connector instead of test points
 
 
 

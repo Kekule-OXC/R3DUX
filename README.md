@@ -20,7 +20,7 @@ After verifying that the PCB worked (by transplanting all components from a work
 
 Ergenien was able to extract the majority of the register information need to complete the design, but the real life time demands of virtual work and school there was no time to even start working on the CPLD code.  
  
-Time passed and we all went our separate ways, and so with a known working PCB in hand, and a trove of information we had amasses, the project was abandoned.
+Time passed and we all went our separate ways, and so with a known working PCB in hand, and a trove of information we had amassed, the project was abandoned.
 
 Fast forward about six months and I decided to start working on it again, and breathed new life into the project, a REDUX as it were.
 

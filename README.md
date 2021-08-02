@@ -66,6 +66,7 @@ Installation is identical to an OEM X3 chip, and all connections are fully compa
  * 2- program the main flash chip with a 2MB Flashbios (8 copies).... 
  * 3- program the EEPROM
  * CPLD programming points are wired to the LCD connector (see images folder)
+ * JED can be compiled from ISP Lever
 See [Installation.MD] for more details
 
 ## Licensing

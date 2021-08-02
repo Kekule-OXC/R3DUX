@@ -62,10 +62,10 @@ A mix of features from the purple and CE editions
 Installation is identical to an OEM X3 chip, and all connections are fully compatible so can be used plug and play with a previous X3 install.
  
  Before assembling the board, you must 
- * 1) Program the backup chip with a 256k Flashbios.... 
- * 2) program the main flash chip with a 2MB Flashbios (8 copies).... 
- * 3) program the EEPROM
- 
+ * 1- Program the backup chip with a 256k Flashbios.... 
+ * 2- program the main flash chip with a 2MB Flashbios (8 copies).... 
+ * 3- program the EEPROM
+ * CPLD programming points are wired to the LCD connector (see images folder)
 See [Installation.MD] for more details
 
 ## Licensing

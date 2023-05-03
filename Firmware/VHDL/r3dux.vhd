@@ -4,6 +4,7 @@
 -- Target Devices: LC4256
 --
 -- Revision 1.0 - File Created - Aaron "Kekule" Van Tassle
+-- Revision 1.1 - Recovered lost file from NAS, should be more complete
 --
 -- Additional Comments:
 -- R3DUX is free software: you can redistribute it and/or modify

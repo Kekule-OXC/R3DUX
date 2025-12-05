@@ -53,7 +53,7 @@
 --BANK5-8   	0100 	1 |X |X 	0x100000
 
 --2M
---BANK1-8   	0000 	X |X |X 	0x000000
+--BANK1-8   	1000 	X |X |X 	0x000000
 
 
 --
@@ -405,50 +405,41 @@ PW : entity work.pwm port map(LPC_CLK,reset, REG_LCD_BL, BACKLIGHT_TARGET);
 					-- Apply bank selection (already latched at COUNT=7)
 					IF (CYCLE_TYPE = MEM_READ OR CYCLE_TYPE = MEM_WRITE) THEN 
 		
-						CASE BANK_SELECT(3 DOWNTO 0) IS --
-						---256k Banks
-						
-						--THESE ARE BACKWARDS FROM THE SWITCH APPEARANCE	
-						WHEN "1111" => --
-							LPC_ADDRESS(20 DOWNTO 18) <= "000"; --BANK 1
-						WHEN "1110" => --
-							LPC_ADDRESS(20 DOWNTO 18) <= "001"; --BANK 2 
-						WHEN "1101" => --
-							LPC_ADDRESS(20 DOWNTO 18) <= "010"; --BANK 3
-						WHEN "1100" => --BANK 4 
-							LPC_ADDRESS(20 DOWNTO 18) <= "011"; --BANK 4 
-						WHEN "1011" => 							
-							LPC_ADDRESS(20 DOWNTO 18) <= "100"; --BANK 5
-						WHEN "1010" =>   --
-							LPC_ADDRESS(20 DOWNTO 18) <= "101"; --BANK 6 
-						WHEN "1001" =>   --
-							LPC_ADDRESS(20 DOWNTO 18) <= "110"; --BANK 7
-						WHEN "1000" => 
-							LPC_ADDRESS(20 DOWNTO 18) <= "111"; --BANK 8 
-					--512k Banks
-						WHEN "0111" => 
-							LPC_ADDRESS(20 DOWNTO 19) <= "00";  --BANK 12
-							LPC_ADDRESS(18) <= '0';  -- Explicitly set A18
-						WHEN "0110" => 
-							LPC_ADDRESS(20 DOWNTO 19) <= "01";  --BANK 34
-							LPC_ADDRESS(18) <= '0';
-						WHEN "0101" => 
-							LPC_ADDRESS(20 DOWNTO 19) <= "10";  --BANK 56
-							LPC_ADDRESS(18) <= '0';
-						WHEN "0100" => 
-							LPC_ADDRESS(20 DOWNTO 19) <= "11";  --BANK 78
-							LPC_ADDRESS(18) <= '0';
-					--1M Banks
-						WHEN "0011" =>   
-							LPC_ADDRESS(20) <= '0'; 	    --BANK 1234
-						WHEN "0010" => 
-							LPC_ADDRESS(20) <= '1'; 	    --BANK 5678
-						WHEN "0001" =>  -- Add missing BANK 8 case
-							LPC_ADDRESS(20 DOWNTO 18) <= "111"; --BANK 8
-						WHEN "0000"  => --no bank switch, default to first 1MB bank
-							LPC_ADDRESS(20) <= '0'; 
-						WHEN OTHERS => 
-							LPC_ADDRESS(20 DOWNTO 18) <= "000"; -- Default to BANK 1
+						CASE BANK_SELECT(3 DOWNTO 0) IS --THESE ARE BACKWARDS FROM THE SWITCH APPEARANCE	
+							---256k Banks
+							WHEN "1111" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "000"; --BANK 1
+							WHEN "1110" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "001"; --BANK 2 
+							WHEN "1101" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "010"; --BANK 3
+							WHEN "1100" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "011"; --BANK 4 
+							WHEN "1011" => 							
+								LPC_ADDRESS(20 DOWNTO 18) <= "100"; --BANK 5
+							WHEN "1010" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "101"; --BANK 6 
+							WHEN "1001" =>  
+								LPC_ADDRESS(20 DOWNTO 18) <= "110"; --BANK 7
+							WHEN "1000" => 
+								LPC_ADDRESS(20 DOWNTO 18) <= "111"; --BANK 8 
+							--512k Banks
+							WHEN "0111" => 
+								LPC_ADDRESS(20 DOWNTO 19) <= "00";  --BANK 12
+							WHEN "0110" => 
+								LPC_ADDRESS(20 DOWNTO 19) <= "01";  --BANK 34
+							WHEN "0101" => 
+								LPC_ADDRESS(20 DOWNTO 19) <= "10";  --BANK 56
+							WHEN "0100" => 
+								LPC_ADDRESS(20 DOWNTO 19) <= "11";  --BANK 78
+							--1M Banks
+							WHEN "0011" | "0000" =>   
+								LPC_ADDRESS(20) <= '0'; 	    --BANK 1234
+							WHEN "0010" => 
+								LPC_ADDRESS(20) <= '1'; 	    --BANK 5678
+							--2M Bank
+							WHEN OTHERS => 
+								-- default to first 2MB bank
 						END CASE;
 					END IF;
  

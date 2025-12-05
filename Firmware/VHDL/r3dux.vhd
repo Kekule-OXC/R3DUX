@@ -53,7 +53,7 @@
 --BANK5-8   	0100 	1 |X |X 	0x100000
 
 --2M
---BANK1-8   	0000 	X |X |X 	0x000000
+--BANK1-8   	1000 	X |X |X 	0x000000
 
 
 --
@@ -433,12 +433,13 @@ PW : entity work.pwm port map(LPC_CLK,reset, REG_LCD_BL, BACKLIGHT_TARGET);
 							WHEN "0100" => 
 								LPC_ADDRESS(20 DOWNTO 19) <= "11";  --BANK 78
 							--1M Banks
-							WHEN "0011" =>   
+							WHEN "0011" | "0000" =>   
 								LPC_ADDRESS(20) <= '0'; 	    --BANK 1234
 							WHEN "0010" => 
 								LPC_ADDRESS(20) <= '1'; 	    --BANK 5678
+							--2M Bank
 							WHEN OTHERS => 
-								--no bank switch / default to first 2MB bank
+								-- default to first 2MB bank
 						END CASE;
 					END IF;
  
